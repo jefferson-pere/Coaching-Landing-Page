@@ -1,56 +1,20 @@
 header {
-  background: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  background: #000 url(../img/head.png);
   width: 100%;
+  height: 65rem;
   padding: 1.6rem 1.6rem 0;
   color: white;
-  position: relative;
-  z-index: 1;
   overflow: hidden;
-}
-
-.circle {
-  background: #fff2;
-  border-radius: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-.circle:nth-child(1) {
-  height: 12rem;
-  width: 12rem;
-  bottom: -10%;
-  right: 11rem;
-}
-
-.circle:nth-child(2) {
-  height: 26rem;
-  width: 26rem;
-  bottom: -3rem;
-  right: -8rem;
-}
-
-.wheelIcon img {
-  width: 90rem;
-  height: 90rem;
-  filter: invert(100%) blur(10px);
-  opacity: 0.05;
-  position: absolute;
-  bottom: -3rem;
-  right: -10rem;
-  z-index: -1;
-  animation: rotate 15s infinite linear;
 }
 
 .boxMenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #fff4;
-  animation: slideTopDown 1s;
+  justify-content: space-around;
 }
 
-.imageLogo {
-  width: 4.8rem;
+.imgLogo {
+  width: 8rem;
 
   & img {
     width: 100%;
@@ -65,59 +29,101 @@ nav ul {
 
 nav a {
   color: white;
-  font-size: clamp(0.9rem, 2.5vw, 2rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
   white-space: nowrap;
   text-shadow: 1px 1px 1px #0002;
-  padding: 0.8rem;
+  padding: 2rem;
   border-radius: 0.8rem;
 }
 
 nav a:hover {
-  background: #fff2;
+  background: #0175f7;
 }
 
 .containerSlogan {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1.2rem;
+  margin-left: 15rem;
+  margin-top: 12rem;
 }
 
 .boxSlogan {
-  max-width: 32rem;
+  max-width: 45%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 1.6rem;
 
   & h1 {
-    font-size: 2rem;
+    font-size: 8rem;
     font-weight: 500;
     width: 100%;
     text-shadow: 1px 2px 2px #0002;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s 1s steps(25) both;
+    & span {
+      font-size: 11rem;
+    }
   }
 
   & p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-shadow: 1px 1px 2px #0002;
     animation: fadeIn 1s;
   }
+  .boxContato {
+    display: flex;
+    justify-content: space-around;
+    background: #ccc1;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    max-width: 90%;
+  }
+  /* social */
+  .button-container {
+    display: flex;
+    gap: 2rem;
+  }
 
+  .button {
+    cursor: pointer;
+    color: #ffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2d2e32;
+    border: 2px solid #2d2e32;
+    transition: all 0.45s;
+  }
+
+  .button:hover {
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background-color: #0175f7;
+    color: #2d2e32;
+  }
+
+  .button:hover .btn-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+      brightness(103%) contrast(103%);
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  */
   & button {
-    background: linear-gradient(#ffc44f, #cc9d3f);
+    background: #0175f7;
     color: white;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    padding: 0.6rem;
+    padding: 1rem;
     border-radius: 0.8rem;
-    width: 10rem;
+    width: 15rem;
     text-shadow: 1px 1px 1px #0004;
     box-shadow: 1px 1px 2px #0002;
     transition: filter 200ms, scale 200ms;
-    animation: pulse 1s 3.6s;
 
     &:hover {
       cursor: pointer;
@@ -127,12 +133,7 @@ nav a:hover {
   }
 }
 
-.boxImageSaleswoman img {
-  width: 14rem;
-  animation: slideRightLeft 1s;
-}
-
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   header {
     padding: 2.4rem 2.4rem 0;
   }
@@ -273,4 +274,4 @@ nav a:hover {
   .boxImageSaleswoman img {
     width: 24rem;
   }
-}
+} */
