@@ -14,7 +14,7 @@ header {
 }
 
 .imgLogo {
-  width: 8rem;
+  width: 10rem;
 
   & img {
     width: 100%;
@@ -69,6 +69,7 @@ nav a:hover {
     text-shadow: 1px 1px 2px #0002;
     animation: fadeIn 1s;
   }
+  /*  */
   .boxContato {
     display: flex;
     justify-content: space-around;
@@ -89,8 +90,6 @@ nav a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #2d2e32;
-    border: 2px solid #2d2e32;
     transition: all 0.45s;
   }
 
@@ -121,8 +120,6 @@ nav a:hover {
     padding: 1rem;
     border-radius: 0.8rem;
     width: 15rem;
-    text-shadow: 1px 1px 1px #0004;
-    box-shadow: 1px 1px 2px #0002;
     transition: filter 200ms, scale 200ms;
 
     &:hover {
