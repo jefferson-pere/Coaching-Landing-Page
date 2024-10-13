@@ -28,7 +28,7 @@ footer {
   align-items: center;
   color: #0175f7;
 
-  & a{
+  & a {
     color: rgba(255, 255, 255, 0.568);
   }
 
@@ -113,5 +113,54 @@ footer {
     cursor: pointer;
     filter: brightness(1.05);
     scale: 1.01;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 100%;
+    padding: 2rem;
+  }
+  .footerContainer article {
+    display: flex;
+    flex-direction: column;
+  }
+  .descrition {
+    max-width: 100%;
+    margin-top: 0;
+
+    & img {
+      width: 6rem;
+    }
+    & p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  }
+  .Company {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: #0175f7;
+
+    & a {
+      color: rgba(255, 255, 255, 0.568);
+    }
+
+    a:hover {
+      text-shadow: 1px 1px 5px white;
+    }
+  }
+  .subscribe {
+    margin: 2rem;
+  }
+
+  .button-container-footer {
+    margin-top: 2rem;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
   }
 }

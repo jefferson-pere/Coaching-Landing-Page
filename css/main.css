@@ -114,3 +114,87 @@
     text-shadow: 2px 2px 5px black;
   }
 }
+
+/* celular */
+@media (max-width: 768px) {
+  .outroContainer {
+    height: 100%;
+
+    & h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .ourServices {
+    gap: 1rem;
+  }
+  .cardPont {
+    & .imgPont {
+      width: 3.2rem;
+    }
+
+    & .imgPont img {
+      width: 100%;
+    }
+
+    & p {
+      text-align: left;
+      font-size: 1.2rem;
+    }
+  }
+  .dadosContainer {
+    max-width: 50%;
+
+    & img {
+      margin-top: 1rem;
+    }
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+  .dadosTxtImg {
+    position: static;
+    height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .AprendaContainer {
+    height: 100%;
+    padding: 4rem 1rem;
+
+    & h2 {
+      text-align: center;
+      font-size: 2.2rem;
+    }
+  }
+  .boxAprenda {
+    margin-top: 2.2rem;
+  }
+  .aprendaImg {
+    width: 22rem;
+
+    & img {
+      width: 100%;
+    }
+
+    & h3 {
+      position: static;
+      top: 0;
+      left: 0;
+      font-size: 1.6rem;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    & p {
+      max-width: 100%;
+      position: static;
+      top: 0;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 5px black;
+    }
+  }
+}
