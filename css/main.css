@@ -1,8 +1,9 @@
 .outroContainer {
-  height: 60rem;
   display: flex;
+  justify-content: space-evenly;
+  height: 60rem;
+  border-top: 5px solid #ccc1;
   padding: 3.2rem 2.4rem 2.4rem;
-  margin: auto;
   text-align: center;
   color: white;
   background: black;
@@ -15,10 +16,8 @@
 .ourServices {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 3.2rem;
   max-width: 52rem;
-  margin: 1.6rem auto 0;
 }
 
 .cardPont {
@@ -45,36 +44,48 @@
   max-width: 50%;
 
   & img {
-    width: 80%;
+    margin-top: 5rem;
+    width: 100%;
+    border: solid 1px #0174f7;
+  }
+  & p {
+    font-size: 1.6rem;
   }
 }
 .dadosTxtImg {
   position: absolute;
-  width: 25%;
+  top: 73rem;
+  right: 8rem;
+  width: 34%;
+  height: 4rem;
+  margin-top: 5rem;
   background: #0175f7;
-  border-radius: 1rem;
+  align-items: center;
+  font-size: 2.6rem;
+  text-shadow: 1px 1px 30px black;
 }
 
-.howItWorksContainer {
-  padding: 3.2rem 2.4rem;
+.AprendaContainer {
+  height: 60rem;
+  padding: 2.4rem 4.2rem;
+  background: black;
+  color: white;
+  border-top: 1px solid #ccc2;
 
   & h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 5.2rem;
   }
 }
-
-.cardsHowItWorks {
+.boxAprenda {
   margin-top: 3.2rem;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 3.2rem;
+  flex-direction: row;
 }
-
-.cardHowItWorks {
-  width: 24rem;
-  margin: 0 auto;
+.aprendaImg {
+  position: relative;
+  width: 22rem;
+  margin: auto;
   text-align: justify;
 
   & img {
@@ -82,11 +93,20 @@
   }
 
   & h3 {
-    line-height: 160%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
     font-size: 1.6rem;
+    text-shadow: 2px 2px 5px black;
   }
 
   & p {
+    max-width: 90%;
+    position: absolute;
+    top: 65%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
     font-size: 1.4rem;
+    text-shadow: 2px 2px 5px black;
   }
 }
