@@ -11,6 +11,7 @@ footer {
 }
 .descrition {
   max-width: 25%;
+  margin-top: -11px;
 
   & img {
     width: 6rem;
@@ -25,6 +26,15 @@ footer {
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+  color: #0175f7;
+
+  & a{
+    color: rgba(255, 255, 255, 0.568);
+  }
+
+  a:hover {
+    text-shadow: 1px 1px 5px white;
+  }
 }
 .subscribe {
   & form {
@@ -44,6 +54,7 @@ footer {
     font-weight: 500;
     font-size: 1.4rem;
     text-shadow: 1px 1px 1px #0004;
+    border-radius: 0;
     transition: filter 200ms;
   }
   & form button:hover {
